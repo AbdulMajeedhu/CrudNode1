@@ -1,0 +1,38 @@
+const express = require('express');
+const app = express();
+
+app.get("/",function(req,res){
+    res.send("Hello World")
+    
+})
+
+app.ilsten(3000) // intha value 3000-8000 kulla than irukkanum
+
+
+// const  http = require('http');
+const express = require('express');
+const app = express();
+app.get("/",function(req,res){
+    res.json({
+        message:"Hell0",
+        module:'basics'
+    })
+})
+app.get("/about",function(req,res){
+    res.json({
+        message:"i am groot",
+    })
+})
+
+app.use(()=>{
+    console.log("hello")
+})
+// const server =http.createServer(app);
+app.listen(3000)
+
+
+app.use(express.json()); middleware = entha route kku req vanthalum middleware aah thandi than varum
+
+
+npm install nodemon 
+npm install cors 1;28;20
