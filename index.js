@@ -126,6 +126,6 @@ app.delete("/student/:id",async function(req,res){
   }
 }; 
 dbconnectionCheck();
-console.log("hi");
+
 // app.listen(3001);
 app.listen(process.env.PORT || 3001);
